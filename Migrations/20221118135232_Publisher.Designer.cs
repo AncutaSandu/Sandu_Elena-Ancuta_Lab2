@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sandu_Elena_Ancuta_Lab2.Data;
 
@@ -11,9 +12,10 @@ using Sandu_Elena_Ancuta_Lab2.Data;
 namespace Sandu_Elena_Ancuta_Lab2.Migrations
 {
     [DbContext(typeof(Sandu_Elena_Ancuta_Lab2Context))]
-    partial class Sandu_Elena_Ancuta_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20221118135232_Publisher")]
+    partial class Publisher
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

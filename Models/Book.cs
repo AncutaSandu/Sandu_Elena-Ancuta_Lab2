@@ -10,7 +10,7 @@ namespace Sandu_Elena_Ancuta_Lab2.Models
 
         [Display(Name="Book Title")]
         public string Title { get; set; }
-        public string Author { get; set; }
+       
 
         [Column(TypeName ="decimal(6, 2)")]
         public decimal Price { get; set; }
@@ -21,6 +21,10 @@ namespace Sandu_Elena_Ancuta_Lab2.Models
         public int? PublisherID { get; set; }
 
         public Publisher? Publisher { get; set; } //navigation property
+
+        public int? AuthorsID { get; set; }
+
+        public Authors? Authors { get; set; } //navigation property 
 
     }
 }
